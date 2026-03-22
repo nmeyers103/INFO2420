@@ -24,7 +24,33 @@
         font-size: 24px;
         font-weight: lighter;
     }
-    
+    .dropdown button{
+        background-color: white;
+        color:blue;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        text-decoration: underline;
+        font-size: 15px;
+        display: inline;
+    }
+    .dropdown{
+        display: inline-block;
+    }
+    .dropdown a{
+        display: block;
+        padding: 10px;
+    }
+    .dropdown .content{
+        display: none;
+        position: absolute;
+        min-width: 100px;
+        background-color: white;
+        box-shadow: 2px 2px 5px black;
+    }
+    .dropdown:hover .content{
+        display: block;
+    }
 
 </style>
 </head>
@@ -72,6 +98,18 @@
         <a href="practice/practice_5/index.html" target="_blank">Practice 5</a>
         &nbsp;&nbsp;|&nbsp;&nbsp;
         <a href="practice/practice_6B/table.html" target="_blank">Practice 6B</a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <div class="dropdown">
+            <button>JavaScript 1</button>
+            <div class="content">
+                <a href="practice/Javascript1/AlertBox.htm" target="_blank">Alert Box</a>
+                <a href="practice/Javascript1/Calculations.htm" target="_blank">Calculations</a>
+                <a href="practice/Javascript1/EventHandler.htm" target="_blank">Event Handler</a>
+                <a href="practice/Javascript1/ImageSwap.htm" target="_blank">ImageSwap</a>
+                <a href="practice/Javascript1/SetCSS.htm" target="_blank">Set CSS</a>
+                <a href="practice/Javascript1/Slideshow.htm" target="_blank">Slideshow</a>
+            </div>
+        </div>
         &nbsp;&nbsp;|&nbsp;&nbsp;
     <hr />
 
