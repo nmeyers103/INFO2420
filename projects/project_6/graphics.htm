@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Backyard Birds - Graphics</title>
+
+<style type="text/css">
+
+	#thumbs, #image {
+		width: 700px;
+		border: solid 1px #000;
+		text-align: center;
+		margin: 0 auto 0 auto;
+		color: #000;
+		background: #eee;
+		padding: 5px;
+	}
+
+	#thumbs {
+		margin-top: 10px;
+	}
+
+			
+	#thumbs img {
+		border: solid 1px #000;
+		margin: 5px;
+	}
+
+	#image{
+		height:400px;
+	}
+
+	.instructions{
+		font-style:italic;
+	}
+</style>
+
+<script language="JavaScript" type="text/javascript">
+
+	var imgArray = new Array(
+		'Image1Lg.jpg',
+		'Image2Lg.jpg',
+		'Image3Lg.jpg',
+		'Image4Lg.jpg'
+	);
+
+	var titleArray = new Array(
+		'Bald Eagle',
+		'Hawk',
+		'Geese Flying Over the Sunset',
+		'Duck'	
+	);
+			
+	var imgPath = "images/";
+		
+	function swapImage(imgID) {
+
+		var theImage = document.getElementById('theImage');
+		var textDiv = document.getElementById('bottomText');
+
+		var newImg;
+		var textTitle;
+
+		newImg = imgArray[imgID];
+		theImage.src = imgPath + newImg;
+
+		textTitle=titleArray[imgID];
+
+      		textDiv.innerHTML = textTitle;
+	}
+			
+	function preloadImages() {		
+		for(var i = 0; i < imgArray.length; i++) {
+			var tmpImg = new Image;
+			tmpImg.src = imgPath + imgArray[i];
+		}
+	}
+</script>
+</head>
+
+<body  onload="preloadImages()">
+
+<div align="center">
+
+<div>
+	<a href="" onMouseOver="document.getElementById('print').src='images/Print2.jpg';"
+	onMouseOut="document.getElementById('print').src='images/Print1.jpg';">
+	<img src="images/Print1.jpg" width="200" height="50" alt="Print Page" id="print">
+	</a>
+</div>
+
+
+<div>
+	<a href="" onMouseOver="document.getElementById('logo').src='images/logo2.png';"
+	onMouseOut="document.getElementById('logo').src='images/logo1.png';">
+	<img src="images/logo1.png" alt="Logo" id="logo">
+	</a>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+
+<div id="thumbs">
+		<img src="images/Image1Sm.jpg" alt="Bald Eagle" onmouseover="swapImage(0);">
+		<img src="images/Image2Sm.jpg" alt="Hawk" onmouseover="swapImage(1);">
+		<img src="images/Image3Sm.jpg" alt="Geese" onmouseover="swapImage(2);">
+		<img src="images/Image4Sm.jpg" alt="Duck" onmouseover="swapImage(3);">
+		
+</div>
+
+	<div id="image">
+
+		<img id="theImage" src="images/Image1Lg.jpg" alt="Bald Eagle">
+		<h3 id="bottomText">Bald Eagle</h3>
+	</div>
+
+<img src="images/2colback.jpg" alt="background">
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+</div>
+</body>
+</html>
