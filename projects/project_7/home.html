@@ -1,0 +1,71 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Backyard Birds - Home</title>
+	<link rel="stylesheet" href="mystyles.css" type="text/css">
+	<script type="text/javascript" src="myscripts.js"></script>
+</head>
+
+<body onload="preloadImages()">
+	<header>
+		<div class="banner">
+			<a href="home.html" onMouseOver="document.getElementById('logo').src='Images/logo2.png';"
+			onMouseOut="document.getElementById('logo').src='Images/logo1.png';">
+			<img src="Images/logo1.png" alt="Logo" id="logo">
+			</a>
+			<img src="Images/banner.png" alt="banner">
+		</div>
+	</header>
+	
+	<section>
+		<nav>
+			<a href="#">&nbsp;Home&nbsp;</a>
+			<a href="#">&nbsp;About Us&nbsp;</a>
+			<a href="#">&nbsp;Tributes&nbsp;</a>
+			<a href="#">&nbsp;Survey&nbsp;</a>
+			<a href="#">&nbsp;Favorites&nbsp;</a>
+		</nav>
+		<article>
+			<div id="welcome">
+				<h1>Welcome to Backyard Birds of Utah!</h1>
+				<p>If you love birdwatching like we do, you should enjoy looking around this site.
+				Take a look at our Bird Profiles and take the opportunity to complete our survey.</p>
+			</div>
+			<h2>Gallery</h2>
+			
+			<div id="image">
+				<img id="theImage" src="Images/Fullsize/Image1Lg.jpg" alt="Bald Eagle">
+				<h3 id="bottomText">Bald Eagle</h3>
+			</div>
+			
+			<h3 id="thumbtitle">Other images:</h3>
+			<div id="thumbs">
+				<img src="Images/Thumbnails/Image1Sm.jpg" alt="Bald Eagle" onmouseover="swapImage(0);">
+				<img src="Images/Thumbnails/Image2Sm.jpg" alt="Hawk" onmouseover="swapImage(1);">
+				<img src="Images/Thumbnails/Image3Sm.jpg" alt="Geese" onmouseover="swapImage(2);">
+				<img src="Images/Thumbnails/Image4Sm.jpg" alt="Duck" onmouseover="swapImage(3);">
+			</div>
+			
+			<h2>Mini Tribute</h2>
+			<div id="blockquote">
+				<img src="Images/Hummingbird.jpg" alt="Hummingbird" class="thumbnailright" height = "150">
+				<blockquote>"Every Christmas I am on the look out for a great calendar to give family members. My husband especially loves bird watching and so this wonderful Birds of Utah drew my attention. There are a wide variety of birds in this year's calendar. I loved the detail of the..." <a href="#">more&gt;&gt;</a></blockquote>
+    		</div>
+			
+		</article>
+		
+	</section>
+	<footer>
+		<div class="leftfooter">
+			<p>This website has been created <br>
+				soley for educational purposes</p>
+		</div>
+		<div class="rightfooter">
+			<p>Made by Nathan Meyers <br>
+				10832388@uvu.edu</p>
+		</div>
+		
+	</footer>
+</body>
+</html>

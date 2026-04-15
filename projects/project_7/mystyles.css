@@ -1,0 +1,174 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 0;
+	background-color: #0F1B2F;
+	margin-bottom: 30px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-weight: lighter;
+	height: auto;
+    }
+
+header {
+	width: 900px;
+	background-color: #243046;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.banner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+#logo {
+	height: 120px;
+	margin-left: 40px;
+}
+
+nav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 200px;
+	gap: 20px;
+	margin-top: 30px;
+}
+
+nav a {
+	width: 140px;
+	padding: 6px 0px;
+	text-align: center;
+	border: solid 2px #000;
+	white-space: nowrap;
+	background-color: #FFB600;
+	color: #000;
+	text-decoration: none;
+	font-size: 20px;
+	
+}
+
+nav a:hover {
+	background-color: #0F1B2F;
+	color: #FFF;
+	text-decoration: none;
+}
+
+nav a:active {
+	background-color: #ADB6C5;
+	color: #FFF;
+	text-decoration: none;
+}
+
+h1 {
+	color: #FFB600;
+}
+
+section {
+	width: 900px;
+	background-image: url("Images/3colback.png");
+	background-repeat: repeat-y;
+	overflow: hidden;
+	margin: auto;
+	display: flex;
+}
+
+article {
+	width: 700px;
+	float: right;
+	text-align: center;
+	margin: auto;
+	color: #fff;
+}
+
+article p {
+	font-size: 18px;
+	margin: 25px;
+	text-align: left;
+	line-height: 25px;
+}
+
+#welcome {
+	background-color: #414F67;
+	padding: 10px;
+	margin: 0 20px;
+	border: 3px solid black;
+	box-shadow: 10px 10px #0F1B2F;
+}
+
+article h2 {
+	text-decoration: underline;
+	text-align: left;
+	margin: 25px;
+}
+
+#bottomText {
+	color: #FFB600;
+}
+
+#thumbtitle {
+	text-align: left;
+	margin-left: 25px
+}
+		
+#thumbs img {
+	border: solid 1px #000;
+	margin: 5px;
+	box-shadow: 5px 5px #0F1B2F;
+}
+#blockquote {
+	background-color: #65738A;
+	border: 3px solid black;
+	box-shadow: 10px 10px #0F1B2F;
+	margin: 25px;
+	padding: 10px;
+}
+blockquote {
+	text-align: left;
+	line-height: 22px;
+}
+
+blockquote a {
+	color: #FFB600;
+}
+
+blockquote a:hover {
+	color: #FFF;
+}
+
+blockquote a:active {
+	color: #0F1B2F;
+}
+
+.thumbnailright { 
+	float: right;
+	padding: 10px;
+}
+
+footer {
+	width: 900px;
+	margin: auto;
+	height: 50px;
+	background-color: #414F67;
+	color: #fff;
+}
+
+.leftfooter {
+	float: left;
+	margin: 0 25px;
+	display: inline;
+	text-align: left;
+	font-size: 12px;
+}
+
+.rightfooter {
+	float: right;
+	display: inline;
+	text-align: right;
+	margin: 0px 25px;
+	font-size: 12px;
+}
